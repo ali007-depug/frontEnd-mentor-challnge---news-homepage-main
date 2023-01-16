@@ -50,6 +50,6 @@ to make mobile toggel menu with js , which i still learning it
 
 ## Author
 
-- Facebook- [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- linekdin - [@yourusername](https://www.twitter.com/yourusername)
+- Linkedin - [Ali AbdElbagi](https://www.linkedin.com/in/ali-abdelbagi-02313b223/)
+- Facebook - [@aliabdelbagi](https://www.facebook.com/ali.abdelbagiali.3)
+- Frontend Mentor - [@ali007-depug](https://www.frontendmentor.io/profile/ali007-depug)
