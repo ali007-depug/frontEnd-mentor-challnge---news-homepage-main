@@ -7,18 +7,19 @@
     --soft-orange      : hsl(35, 77%, 62%);
     --hover-color      : hsl(5, 85%, 63%);
 
-    
+
     --paddiing-right-left: 100px;
 
     --prag-size: 15px;
 }
+
 /* End variables */
 
 /* Globle component */
 * {
-   --webkit-box-sizing: border-box;
-   --moz-box-sizing   : border-box;
-    box-sizing: border-box;
+    --webkit-box-sizing: border-box;
+    --moz-box-sizing   : border-box;
+    box-sizing         : border-box;
 }
 
 html {
@@ -43,7 +44,10 @@ html {
 /* small screens */
 @media (min-width:640px) {
     .container {
-        width: 590px;
+        width        : 600px;
+        padding-top  : 10px;
+        padding-left : 10px;
+        padding-right: 10px;
     }
 }
 
@@ -53,6 +57,7 @@ html {
         width: 760px;
     }
 }
+
 /* medium screens */
 @media (min-width:992px) {
     .container {
@@ -61,6 +66,7 @@ html {
         width        : 970px;
     }
 }
+
 /* large screens */
 @media (min-width:1200px) {
     .container {
@@ -68,6 +74,7 @@ html {
         width  : 1180px;
     }
 }
+
 /* End The responsive */
 
 
@@ -88,9 +95,9 @@ html {
 }
 
 .header .nav ul {
-    list-style-type   : none;
-    margin            : 0;
-    padding-left      : 5px;
+    list-style-type: none;
+    margin         : 0;
+    padding-left   : 5px;
 }
 
 .header .nav ul li {
@@ -128,7 +135,7 @@ html {
     .header .container .nav .open {
         display: block;
     }
-    
+
     /* for mobile menu -- depug in the future with js  */
     /* .header .nav{
         position: relative;
@@ -167,6 +174,7 @@ html {
         color: var(--logo-s-color);
     } */
 }
+
 /* End .header */
 
 /* .section */
@@ -195,10 +203,10 @@ html {
 }
 
 .phrases .theBright {
-    width: 50%;
-    height   : fit-content;
-    position : relative;
-    top      : -10px;
+    width   : 50%;
+    height  : fit-content;
+    position: relative;
+    top     : -10px;
 
 }
 
@@ -207,8 +215,8 @@ html {
     font-size     : 45px;
     line-height   : 45px;
     text-transform: capitalize;
-    width     : 300px;
-    font-weight: 800;
+    width         : 300px;
+    font-weight   : 800;
 }
 
 .phrases .theBright h1 span {
@@ -221,11 +229,11 @@ html {
 }
 
 .phrases .pWithButton p {
-    color       : var(--Dark-grayish-blue);
-    font-size   : 15px;
-    position    : relative;
-    top         : 15px;
-    line-height : 1.5;
+    color      : var(--Dark-grayish-blue);
+    font-size  : 15px;
+    position   : relative;
+    top        : 15px;
+    line-height: 1.5;
 }
 
 .phrases .pWithButton button {
@@ -278,10 +286,10 @@ html {
 }
 
 .rightSection .text p {
-    font-size       : 12px;
-    padding         : 0px 20px;
-    color           : var(--Dark-grayish-blue);
-    line-height     : 1.8;
+    font-size  : 12px;
+    padding    : 0px 20px;
+    color      : var(--Dark-grayish-blue);
+    line-height: 1.8;
 }
 
 .rightSection .text .hr {
@@ -291,68 +299,12 @@ html {
     left            : 20px;
     top             : 10px;
     margin-bottom   : 25px;
-    background-color:var(--Dark-grayish-blue);
+    background-color: var(--Dark-grayish-blue);
     ;
 }
 
-/* for medium screen */
-@media (min-width:992px) and (max-width:1199px) {
-    .section .container .leftSection {
-        width : 600px;
-        height: 420px;
-    }
-
-    .section .leftSection .desktop-img {
-        width: 100%;
-    }
-
-    .section .leftSection .phrases {
-        width: 100%;
-    }
-
-    .section .leftSection .phrases .theBright h1 {
-        font-size: 40px;
-    }
-
-    .section .leftSection .phrases .pWithButton p {
-        font-size: 13px;
-    }
-
-    .section .rightSection {
-        width : calc(100%-600px);
-        height: 420px;
-    }
-}
-
-/* for medium screen */
-@media (min-width:768px) and (max-width:991px) {
-    .section .container {
-        padding-right: 15px;
-        padding-left : 15px;
-    }
-
-    .section .leftSection {
-        width: 500px;
-    }
-
-    .section .leftSection .phrases .theBright h1 {
-        font-size: 33px;
-    }
-
-    .section .leftSection .phrases .pWithButton p {
-        font-size   : 13px;
-        line-height : 1.2;
-        padding-left: 5px;
-    }
-
-    .section .leftSection .phrases .pWithButton button {
-        width: 120px;
-    }
-}
-/* end medium screen */
-
 /* for mobile */
-@media (min-width:375px) and (max-width:640px) {
+@media (min-width:375px) and (max-width:639px) {
     .section .container .desktop-img {
         display: none;
     }
@@ -389,7 +341,7 @@ html {
     .section .leftSection .phrases .theBright h1 {
         margin-bottom: 0;
         font-size    : 35px;
-        width: 100%;
+        width        : 100%;
     }
 
     .section .leftSection .phrases .pWithButton {
@@ -400,7 +352,78 @@ html {
         height: 400px;
     }
 }
+
 /* End mobile */
+
+/* for taps screens */
+@media (min-width:640px) and (max-width:767px) {
+    .section .leftSection .phrases .theBright h1 {
+        font-size: 45px;
+
+    }
+}
+
+/* for medium screen */
+@media (min-width:992px) and (max-width:1199px) {
+    .section .container .leftSection {
+        width : 600px;
+        height: 420px;
+    }
+
+    .section .leftSection .desktop-img {
+        width: 100%;
+    }
+
+    .section .leftSection .phrases {
+        width: 100%;
+    }
+
+    /*  */
+    .section .leftSection .phrases .theBright h1 {
+        font-size: 40px;
+    }
+
+    .section .leftSection .phrases .pWithButton p {
+        font-size: 13px;
+    }
+
+    .section .rightSection {
+        width : calc(100%-600px);
+        height: 420px;
+    }
+}
+
+/* for medium screen */
+@media (min-width:768px) and (max-width:991px) {
+    .section .container {
+        padding-right: 15px;
+        padding-left : 15px;
+    }
+
+    .section .leftSection {
+        width: 500px;
+    }
+
+    .section .leftSection .phrases .theBright {
+        width: 235px;
+    }
+
+    .section .leftSection .phrases .theBright h1 {
+        font-size: 45px;
+    }
+
+    .section .leftSection .phrases .pWithButton p {
+        font-size   : 13px;
+        line-height : 1.2;
+        padding-left: 5px;
+    }
+
+    .section .leftSection .phrases .pWithButton button {
+        width: 120px;
+    }
+}
+
+/* end medium screen */
 
 /* Start footer */
 .footer {
@@ -412,7 +435,7 @@ html {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap                  : 10px;
     width                : 100%;
-    padding: 0 100px;
+    padding              : 0 100px;
 }
 
 .footer .img {
@@ -453,18 +476,33 @@ html {
     font-size  : 13px;
     line-height: 23px;
 }
-.footer .img:last-of-type{
-padding-left: 40px;
-width: 340px;
+
+.footer .img:last-of-type {
+    padding-left: 40px;
+    width       : 340px;
 }
+
 @media (min-width:375px) and (max-width:639px) {
-    .footer .container{
-        padding-left: 20px;
+    .footer .container {
+        padding-left : 20px;
         padding-right: 20px;
     }
-    .footer .img:last-of-type{
+
+    .footer .img:last-of-type {
         padding-left: 0;
-        width: 300px;
+        width       : 300px;
+    }
+}
+
+/*  */
+@media (min-width:768px) and (max-width:991px){
+    .footer .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .footer .container .img:last-of-type{
+padding-left: 0;
+width: 300px;
     }
 }
 /* End footer */
